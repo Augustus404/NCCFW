@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCC Farewell</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Popup -->
+<div class="popup" id="popup">
+  <h2>To our respected seniors 💜</h2>
+  <p>This farewell is a small tribute from your juniors.</p>
+  <button onclick="startFarewell()">Open Farewell 🎖️</button>
+</div>
+
+<!-- Main Content -->
+<div class="container" id="mainContent">
+  <video id="farewellVideo" autoplay muted playsinline>
+    <source src="farewell.mp4" type="video/mp4">
+  </video>
+
+  <button class="sound-btn" onclick="enableSound()">🔊 Tap for Sound</button>
+
+  <div class="message">
+    Thank you for the memories, the guidance, and the inspiration.<br>
+    You will always march ahead in our hearts.<br>
+    <b>Jai Hind 🇮🇳</b>
+  </div>
+
+  <div class="footer">
+    NCC – With Respect from Your Juniors
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
