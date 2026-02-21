@@ -1,6 +1,6 @@
 function startFarewell(){
   document.getElementById("popup").style.display = "none";
-  document.getElementById("mainContent").style.display = "block";
+  document.getElementById("videoSection").style.display = "block";
 }
 
 function enableSound(){
@@ -8,3 +8,11 @@ function enableSound(){
   video.muted = false;
   video.play();
 }
+
+const video = document.getElementById("farewellVideo");
+
+video.onended = function(){
+  document.getElementById("videoSection").style.display = "none";
+  document.getElementById("albumSection").style.display = "block";
+  window.scrollTo(0,0);
+};
