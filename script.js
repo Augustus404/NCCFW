@@ -18,3 +18,16 @@ video.onended = function(){
   document.getElementById("albumSection").style.display = "block";
   window.scrollTo(0,0);
 };
+
+/* Lightbox functions */
+function openLightbox(img){
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+
+  lightbox.style.display = "flex";
+  lightboxImg.src = img.src;
+}
+
+function closeLightbox(){
+  document.getElementById("lightbox").style.display = "none";
+}
