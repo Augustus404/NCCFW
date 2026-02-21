@@ -31,14 +31,14 @@
   <h2>Memories with Our Seniors 💜</h2>
 
   <div class="photo-grid">
-    <img src="photo1.jpeg">
-    <img src="photo2.jpeg">
-    <img src="photo3.jpeg">
-    <img src="photo4.jpeg">
-    <img src="photo5.jpeg">
-    <img src="photo6.jpeg">
-    <img src="photo7.jpeg">
-    <img src="photo8.jpeg">
+    <img src="photo1.jpeg" onclick="openLightbox(this)">
+    <img src="photo2.jpeg" onclick="openLightbox(this)">
+    <img src="photo3.jpeg" onclick="openLightbox(this)">
+    <img src="photo4.jpeg" onclick="openLightbox(this)">
+    <img src="photo5.jpeg" onclick="openLightbox(this)">
+    <img src="photo6.jpeg" onclick="openLightbox(this)">
+    <img src="photo7.jpeg" onclick="openLightbox(this)">
+    <img src="photo8.jpeg" onclick="openLightbox(this)">
   </div>
 
   <div class="final-salute">Final Salute to Our Seniors 🎖️</div>
@@ -46,6 +46,12 @@
   <div class="footer">
     NCC – With Respect from Your Juniors • Jai Hind 🇮🇳
   </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close" onclick="closeLightbox()">×</span>
+  <img id="lightboxImg">
 </div>
 
 <script src="script.js"></script>
