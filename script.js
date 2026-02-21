@@ -1,10 +1,12 @@
 function startFarewell(){
   document.getElementById("popup").style.display = "none";
-  document.getElementById("videoSection").style.display = "block";
-}
 
-function enableSound(){
+  const videoSection = document.getElementById("videoSection");
   const video = document.getElementById("farewellVideo");
+
+  videoSection.style.display = "block";
+
+  video.currentTime = 0;
   video.muted = false;
   video.play();
 }
